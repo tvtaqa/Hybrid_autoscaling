@@ -1,9 +1,20 @@
-'p_cpu': 0.14
-'p_mem': 0.0275
-'p_service': 0.3
+'p_cpu': 0.00003334
+'p_mem': 0.00001389
+'ms': 0.25
+'mu': 0.25
 'rtt': 0.5
-'per_pod_start_time': 2
-'start_time_constraint': 0.1
+'per_pod_start_time': 1
 'interval': 300
 'namespace': 'test'
 'deployment': 'php-apache'
+'sla_level_one_pro': 95
+'sla_level_one_punishment': 0
+'sla_level_two_pro': 90
+'sla_level_two_punishment': 0.2
+'sla_level_three_pro': 80
+'sla_level_three_punishment': 0.5
+'sla_level_four_pro': 0
+'sla_level_four_punishment': 1
+#'p_service': 0.3
+#'start_time_constraint': 0.1
+
