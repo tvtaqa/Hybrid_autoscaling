@@ -1,0 +1,9 @@
+'p_cpu': 0.14
+'p_mem': 0.0275
+'p_service': 0.3
+'rtt': 0.5
+'per_pod_start_time': 2
+'start_time_constraint': 0.1
+'interval': 300
+'namespace': 'test'
+'deployment': 'php-apache'
