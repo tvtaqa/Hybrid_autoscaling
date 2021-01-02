@@ -2,7 +2,7 @@
 'p_mem': 0.00001389
 'ms': 0.25
 'mu': 0.25
-'rtt': 0.5
+'rtt': 0.3
 'per_pod_start_time': 1
 'interval': 300
 'namespace': 'test'
@@ -15,6 +15,8 @@
 'sla_level_three_punishment': 0.5
 'sla_level_four_pro': 0
 'sla_level_four_punishment': 1
+'thresold': 0.1
+'redundancy': 1.1   #冗余量，比如当前负载是100， 计算推荐方案时，使用110计算
 #'p_service': 0.3
 #'start_time_constraint': 0.1
 

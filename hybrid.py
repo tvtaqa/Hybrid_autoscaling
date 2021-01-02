@@ -8,43 +8,84 @@ import yaml
 _YAML_FILE_NAME = 'arg.yaml'
 
 '''
-以资源量最少为目标
+负载发生变化时，推荐一个伸缩方案，该方案的目标是总成本最少（资源成本+违约成本）
+资源成本的计价方式：参考腾讯云EKS平台 + Kubernetes伸缩机制
+违约成本的计价方式：根据所有请求中，能满足SLA协议的请求占比
+
+为了避免频繁地切换伸缩方案，需要加入一定的资源冗余。
+所以在使用排队论计算推荐方案时，适当地增加了负载。
+比如当前负载为1000，在实际计算的时候，使用了1100来计算推荐方案。该redundancy=1.1
+
+决策：使用推荐方案or维持当前方案
+若 （当前方案的总成本-推荐方案的总成本）/ 当前方案的总成本 > thresold，则需要切换到推荐方案（比原方案少了多少的成本，有点矛盾。。）
+PS：
 '''
 
 
 def decide(load_txt, rps_txt, limit_txt, arg):
     user_rtt = arg['rtt']
-    cur_cpu_res, cur_mem_res, cur_num, cur_ws, cur_pro, cur_rps_for_each = 0, 0, 0, 0, 0, 0
+    cur_cpu_res, cur_mem_res, cur_num, cur_ws, cur_pro, cur_rps_for_each, cur_sla_cost, cur_res_cost = 0, 0, 0, 0, 0, 0, 0, 0
     loadcount = 0
     while True:
         flag = false
         # 取当前时刻的负载，从文件中读取
         load = load_txt[loadcount]
 
-        # 出现无限排队/逗留时间超过用户规定的时间，使用推荐方案
+        # 如果出现无限排队现象，则违约成本就是1
         if loadcount > 1 and load / (cur_num * cur_rps_for_each) >= 1:
-            flag = true
+            cur_sla_cost = 1
         elif loadcount > 1 and load / (cur_num * cur_rps_for_each) < 1:
             # 更新值，如果在当前时刻的负载下，继续使用该方案的ws和pro为多少
             cur_ws, cur_pro = getRTT(load, cur_rps_for_each, user_rtt, cur_num)
-            if cur_ws > user_rtt:
-                flag = true
+            cur_sla_cost = get_sla_cost(arg, cur_pro)
 
-        opt_cpu_res, opt_num, opt_ws, opt_pro, opt_rps = getOptimalPlan(load, rps_txt, limit_txt, arg,
-                                                                        cur_num, cur_cpu_res, cur_mem_res)
-        cur_cpu_res, cur_num, cur_ws, cur_pro, cur_rps_for_each = opt_cpu_res, opt_num, opt_ws, opt_pro, opt_rps
+        # 计算维持当前方案的资源成本
+        cur_res_cost = math.ceil(cur_cpu_res * cur_num / 1000) * arg['p_cpu'] * arg['interval']
 
-        print("当前的load: %d" % load)
-        print("推荐方案的的rps: %f" % opt_rps)
-        print("推荐方案的的num: %d" % opt_num)
-        print("推荐方案的的res: %d" % opt_cpu_res)
-        print("推荐方案的的ws: %f" % opt_ws)
-        print("推荐方案的的概率: %f" % opt_pro)
+        opt_cpu_res, opt_num, opt_ws, opt_pro, opt_rps, opt_score, cur_normal_res_cost, cur_normal_sla_cost \
+            = getOptimalPlan(load, rps_txt, limit_txt, arg, cur_num, cur_cpu_res, cur_mem_res, cur_sla_cost, cur_res_cost)
+
+        old_score = cur_normal_res_cost + cur_normal_sla_cost
+
+
+
+
+        # print("当前的load: %d" % load)
+        # print("推荐方案的得分：%f vs 旧方案的得分：%f" % (opt_score, old_score))
+        #
+        # print("推荐方案的的rps: %f vs 旧方案的rps：%f" % (opt_rps, cur_rps_for_each))
+        # print("推荐方案的的num: %d vs 旧方案的num：%d" % (opt_num, cur_num))
+        # print("推荐方案的CPU资源量: %d vs 旧方案的CPU资源量：%d" % (opt_num*opt_cpu_res, cur_num*cur_cpu_res))
+        # print("推荐方案的的res: %d vs 旧方案的res: %d" % (opt_cpu_res, cur_cpu_res))
+        # print("推荐方案的的ws: %f vs 旧方案的ws：%f" % (opt_ws, cur_ws))
+        # print("推荐方案的的概率: %f vs 旧方案的的概率: %f" % (opt_pro, cur_pro))
+
+        # 决策，是否使用最新的推荐方案（需要对当前使用的方案的数据做归一化处理）
+        '''
+        
+        '''
+        if loadcount == 0 or (opt_score - old_score) / old_score > arg['thresold']:
+            cur_cpu_res, cur_num, cur_ws, cur_pro, cur_rps_for_each = opt_cpu_res, opt_num, opt_ws, opt_pro, opt_rps
+
+            # 执行伸缩方案
+            #execute(cur_num, cur_cpu_res, arg)
+            print("使用推荐方案！！！！！")
+        else :
+            print("维持当前方案！！！！！")
+
+        print("load: %d" % load)
+        print("pod_num: %d\npod_res: %d\npod_total_res: %d " % (cur_num, cur_cpu_res, cur_cpu_res * cur_num))
+        print("pod_rps: %f\npod_total_rps: %d " % (cur_rps_for_each, cur_rps_for_each * cur_num))
+
+        print("svc_ws: %f\nsvc_pro: %f" % (cur_ws, cur_pro))
+
+        #cur_cpu_res, cur_num, cur_ws, cur_pro, cur_rps_for_each = opt_cpu_res, opt_num, opt_ws, opt_pro, opt_rps
+
 
         # 决策：是否使用最新的推荐的方案
 
         print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
-        print("*" * 30)
+        print("*" * 50)
 
         # time.sleep(interval)
         loadcount = loadcount + 1
@@ -54,19 +95,7 @@ def decide(load_txt, rps_txt, limit_txt, arg):
         pass
 
 
-'''
-遍历所有的实例模版，得到最优的推荐方案
-目标函数：min(资源成本+违约成本)
-'''
-
-
-def getOptimalPlan(load, rps_txt, limit_txt, arg, old_n, old_cpu, old_mem):
-    user_rtt = arg['rtt']
-    ms = arg['ms']
-    mu = arg['mu']
-    p_cpu = arg['p_cpu']
-    interval = arg['interval']
-    t1 = arg['per_pod_start_time']
+def get_sla_cost(arg, pro):
     sla_1st_pro = arg['sla_level_one_pro']
     sla_1st_punish = arg['sla_level_one_punishment']
     sla_2st_pro = arg['sla_level_two_pro']
@@ -75,6 +104,33 @@ def getOptimalPlan(load, rps_txt, limit_txt, arg, old_n, old_cpu, old_mem):
     sla_3st_punish = arg['sla_level_three_punishment']
     sla_4st_pro = arg['sla_level_four_pro']
     sla_4st_punish = arg['sla_level_four_punishment']
+    sla_cost = 0
+    if pro > sla_1st_pro:
+        sla_cost = sla_1st_punish
+    elif pro > sla_2st_pro:
+        sla_cost = sla_2st_punish
+    elif pro > sla_3st_pro:
+        sla_cost = sla_3st_punish
+    elif pro > sla_4st_pro:
+        sla_cost = sla_4st_punish
+    return sla_cost
+
+
+'''
+遍历所有的实例模版，得到最优的推荐方案
+目标函数：min(资源成本+违约成本)
+'''
+
+
+def getOptimalPlan(load, rps_txt, limit_txt, arg, old_n, old_cpu, old_mem, cur_sla_cost, cur_res_cost):
+    user_rtt = arg['rtt']
+    ms = arg['ms']
+    mu = arg['mu']
+    p_cpu = arg['p_cpu']
+    interval = arg['interval']
+    t1 = arg['per_pod_start_time']
+
+    redundancy = arg['redundancy']
 
     # 内存资源暂时不考虑
     pod_mem_list = []
@@ -87,19 +143,20 @@ def getOptimalPlan(load, rps_txt, limit_txt, arg, old_n, old_cpu, old_mem):
     rps_list = []
     ws_list = []
 
-    res_cost_max = -1
-    res_cost_min = 99999
-    sla_cost_max = -1
-    sla_cost_min = 99999
+    res_cost_max = cur_res_cost
+    res_cost_min = cur_res_cost
+    sla_cost_max = cur_sla_cost
+    sla_cost_min = cur_sla_cost
 
     historycount = 0
+
     # 遍历当前所有的实例模版，选择最优的方案
     while historycount < len(rps_txt):
         new_pod_cpu = limit_txt[historycount]
         new_rps = rps_txt[historycount]
 
         # 对该实例模版进行求解，得到最少的实例个数，以及该方案下的逗留时间和小于user_rtt的占比
-        new_num, new_ws, new_proportion = queue(load, new_rps, user_rtt)
+        new_num, new_ws, new_proportion = queue(load, new_rps, user_rtt, redundancy)
 
         # 方案启动后，总的资源量(cpu和内存) 目前只考虑CPU
         new_total_cpu_res = new_num * new_pod_cpu
@@ -111,29 +168,23 @@ def getOptimalPlan(load, rps_txt, limit_txt, arg, old_n, old_cpu, old_mem):
             new_res_cost = math.ceil(new_total_cpu_res / 1000) * p_cpu * interval
             # Mem的资源成本
         else:
+
+            # 旧实例的初始个数
             old_initial_n = math.ceil(new_num * (1 - mu))
             msn = math.ceil(new_num * (1 + ms))
             parn = msn - old_initial_n
             j = parn
             while j <= new_num:
-                new_res_cost = math.ceil((j * new_pod_cpu + (msn - j) * old_cpu)/1000) * t1 * p_cpu
+                new_res_cost = math.ceil((j * new_pod_cpu + (msn - j) * old_cpu) / 1000) * t1 * p_cpu
                 j = j + 1
             j = 1
             while j <= msn - new_num - 1:
-                new_res_cost += math.ceil((new_num * new_pod_cpu + j * old_cpu)/1000) * t1 * p_cpu
+                new_res_cost += math.ceil((new_num * new_pod_cpu + j * old_cpu) / 1000) * t1 * p_cpu
                 j = j + 1
-            new_res_cost += (interval - (old_initial_n * t1)) * math.ceil(new_num * new_pod_cpu / 1000) * p_cpu
+            new_res_cost += (interval - (old_initial_n * t1)) * math.ceil(new_total_cpu_res / 1000) * p_cpu
 
-        new_sla_cost = 0
         # 计算违约成本
-        if new_proportion > sla_1st_pro:
-            new_sla_cost = sla_1st_punish
-        elif new_proportion > sla_2st_pro:
-            new_sla_cost = sla_2st_punish
-        elif new_proportion > sla_3st_pro:
-            new_sla_cost = sla_3st_punish
-        elif new_proportion > sla_4st_pro:
-            new_sla_cost = sla_4st_punish
+        new_sla_cost = get_sla_cost(arg, new_proportion)
 
         # 记录资源成本和违约成本的 最小最大值 方便后序的归一化
         if new_res_cost > res_cost_max:
@@ -173,9 +224,12 @@ def getOptimalPlan(load, rps_txt, limit_txt, arg, old_n, old_cpu, old_mem):
         index = index + 1
     pass
 
+    # 对当前方案的资源成本和违约成本也进行归一化
+    cur_normal_res_cost = (res_cost_max - cur_res_cost) / (res_cost_max - res_cost_min)
+    cur_normal_sla_cost = (sla_cost_max - cur_sla_cost) / (sla_cost_max - sla_cost_min)
     # 下标为optimalIndex的，即最优的方案
     return pod_cpu_list[optimalIndex], pod_num_list[optimalIndex] \
-        , ws_list[optimalIndex], proportion_list[optimalIndex], rps_list[optimalIndex]
+        , ws_list[optimalIndex], proportion_list[optimalIndex], rps_list[optimalIndex], optimalScore, cur_normal_res_cost, cur_normal_sla_cost
 
 
 def execute(num_pod, limit_pod, arg):
@@ -225,11 +279,12 @@ def getRTT(load, rps, rtt, c):
     return float(ws), probaility
 
 
-def queue(load, rps, rtt):
+def queue(load, rps, rtt, redundancy):
+    load = math.ceil(load * redundancy)
     c = 1
     strength = 1.0 * load / (c * rps)
     while True:
-        if (strength >= 1):
+        if strength >= 1:
             c = c + 1
             strength = 1.0 * load / (c * rps)
             continue
