@@ -34,10 +34,12 @@ def decide(load_txt, rps_txt, limit_txt, arg):
                                                                         cur_num, cur_cpu_res, cur_mem_res)
         cur_cpu_res, cur_num, cur_ws, cur_pro, cur_rps_for_each = opt_cpu_res, opt_num, opt_ws, opt_pro, opt_rps
 
-        print("推荐方案的的res: %d" % cur_cpu_res)
-        print("推荐方案的的num: %d" % cur_num)
-        print("推荐方案的的ws: %f" % cur_ws)
-        print("推荐方案的的概率: %f" % cur_pro)
+        print("当前的load: %d" % load)
+        print("推荐方案的的rps: %f" % opt_rps)
+        print("推荐方案的的num: %d" % opt_num)
+        print("推荐方案的的res: %d" % opt_cpu_res)
+        print("推荐方案的的ws: %f" % opt_ws)
+        print("推荐方案的的概率: %f" % opt_pro)
 
         # 决策：是否使用最新的推荐的方案
 
@@ -114,13 +116,13 @@ def getOptimalPlan(load, rps_txt, limit_txt, arg, old_n, old_cpu, old_mem):
             parn = msn - old_initial_n
             j = parn
             while j <= new_num:
-                new_res_cost = math.ceil(j * new_pod_cpu + (msn - j) * old_cpu) * t1 * p_cpu
+                new_res_cost = math.ceil((j * new_pod_cpu + (msn - j) * old_cpu)/1000) * t1 * p_cpu
                 j = j + 1
             j = 1
             while j <= msn - new_num - 1:
-                new_res_cost += math.ceil(new_num * new_pod_cpu + j * old_cpu) * t1 * p_cpu
+                new_res_cost += math.ceil((new_num * new_pod_cpu + j * old_cpu)/1000) * t1 * p_cpu
                 j = j + 1
-            new_res_cost += (interval - (old_initial_n * t1)) * math.ceil(new_num * new_pod_cpu) * p_cpu
+            new_res_cost += (interval - (old_initial_n * t1)) * math.ceil(new_num * new_pod_cpu / 1000) * p_cpu
 
         new_sla_cost = 0
         # 计算违约成本
