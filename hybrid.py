@@ -24,17 +24,17 @@ PS：
 
 def decide(load_txt, rps_txt, limit_txt, arg):
     user_rtt = arg['rtt']
-    cur_cpu_res, cur_mem_res, cur_num, cur_ws, cur_pro, cur_rps_for_each, cur_sla_cost, cur_res_cost = 0, 0, 0, 0, 0, 0, 0, 0
+    cur_cpu_res, cur_mem_res, cur_num, cur_ws, cur_pro, cur_rps_for_each, cur_sla_cost, cur_res_cost = 1950, 0, 1, 0, 0, 70.1, 0, 0
     loadcount = 0
     while True:
-        flag = false
+        ischange = false
         # 取当前时刻的负载，从文件中读取
         load = load_txt[loadcount]
 
         # 如果出现无限排队现象，则违约成本就是1
-        if loadcount > 1 and load / (cur_num * cur_rps_for_each) >= 1:
+        if load / (cur_num * cur_rps_for_each) >= 1:
             cur_sla_cost = 1
-        elif loadcount > 1 and load / (cur_num * cur_rps_for_each) < 1:
+        elif load / (cur_num * cur_rps_for_each) < 1:
             # 更新值，如果在当前时刻的负载下，继续使用该方案的ws和pro为多少
             cur_ws, cur_pro = getRTT(load, cur_rps_for_each, user_rtt, cur_num)
             cur_sla_cost = get_sla_cost(arg, cur_pro)
@@ -42,57 +42,83 @@ def decide(load_txt, rps_txt, limit_txt, arg):
         # 计算维持当前方案的资源成本
         cur_res_cost = math.ceil(cur_cpu_res * cur_num / 1000) * arg['p_cpu'] * arg['interval']
 
-        opt_cpu_res, opt_num, opt_ws, opt_pro, opt_rps, opt_score, cur_normal_res_cost, cur_normal_sla_cost \
-            = getOptimalPlan(load, rps_txt, limit_txt, arg, cur_num, cur_cpu_res, cur_mem_res, cur_sla_cost, cur_res_cost)
+        opt_cpu_res, opt_num, opt_ws, opt_pro, opt_rps, opt_score, opt_res_cost, opt_sla_cost, cur_normal_res_cost, cur_normal_sla_cost \
+            = getOptimalPlan(load, rps_txt, limit_txt, arg, cur_num, cur_cpu_res, cur_mem_res, cur_sla_cost,
+                             cur_res_cost)
 
         old_score = cur_normal_res_cost + cur_normal_sla_cost
 
-
-
-
-        # print("当前的load: %d" % load)
-        # print("推荐方案的得分：%f vs 旧方案的得分：%f" % (opt_score, old_score))
-        #
-        # print("推荐方案的的rps: %f vs 旧方案的rps：%f" % (opt_rps, cur_rps_for_each))
-        # print("推荐方案的的num: %d vs 旧方案的num：%d" % (opt_num, cur_num))
-        # print("推荐方案的CPU资源量: %d vs 旧方案的CPU资源量：%d" % (opt_num*opt_cpu_res, cur_num*cur_cpu_res))
-        # print("推荐方案的的res: %d vs 旧方案的res: %d" % (opt_cpu_res, cur_cpu_res))
-        # print("推荐方案的的ws: %f vs 旧方案的ws：%f" % (opt_ws, cur_ws))
-        # print("推荐方案的的概率: %f vs 旧方案的的概率: %f" % (opt_pro, cur_pro))
+        # 将日志写到文件中
+        outputlog(loadcount, load, opt_score, old_score, opt_rps, cur_rps_for_each,
+                  opt_num, cur_num, opt_cpu_res, cur_cpu_res, opt_ws, cur_ws, opt_pro, cur_pro)
 
         # 决策，是否使用最新的推荐方案（需要对当前使用的方案的数据做归一化处理）
-        '''
-        
-        '''
-        if loadcount == 0 or (opt_score - old_score) / old_score > arg['thresold']:
-            cur_cpu_res, cur_num, cur_ws, cur_pro, cur_rps_for_each = opt_cpu_res, opt_num, opt_ws, opt_pro, opt_rps
-
+        if (opt_score - old_score) / old_score > arg['thresold']:
+            cur_cpu_res, cur_num, cur_ws, cur_pro, cur_rps_for_each, cur_res_cost, cur_sla_cost = \
+                opt_cpu_res, opt_num, opt_ws, opt_pro, opt_rps, opt_res_cost, opt_sla_cost
+            ischange = true
             # 执行伸缩方案
-            #execute(cur_num, cur_cpu_res, arg)
-            print("使用推荐方案！！！！！")
-        else :
-            print("维持当前方案！！！！！")
+            # execute(cur_num, cur_cpu_res, arg)
 
-        print("load: %d" % load)
-        print("pod_num: %d\npod_res: %d\npod_total_res: %d " % (cur_num, cur_cpu_res, cur_cpu_res * cur_num))
-        print("pod_rps: %f\npod_total_rps: %d " % (cur_rps_for_each, cur_rps_for_each * cur_num))
+        outputre(ischange, load, loadcount, cur_num, cur_cpu_res, cur_rps_for_each, cur_ws, cur_pro, cur_res_cost,
+                 cur_sla_cost)
 
-        print("svc_ws: %f\nsvc_pro: %f" % (cur_ws, cur_pro))
-
-        #cur_cpu_res, cur_num, cur_ws, cur_pro, cur_rps_for_each = opt_cpu_res, opt_num, opt_ws, opt_pro, opt_rps
-
-
-        # 决策：是否使用最新的推荐的方案
-
-        print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
-        print("*" * 50)
-
-        # time.sleep(interval)
+        # time.sleep(arg['interval'])
         loadcount = loadcount + 1
         if loadcount >= len(load_txt):
-            print("伸缩测试结束")
+            print("伸缩测试结束\n")
             break
         pass
+
+
+def outputre(ischange, load, loadcount, cur_num, cur_cpu_res, cur_rps_for_each, cur_ws, cur_pro, opt_res_cost,
+             opt_sla_cost):
+    print(time.strftime("%Y-%m-%d %H:%M:%S", time.localtime()))
+    print("current index: %d " % loadcount)
+    print("load: %d" % load)
+    print("pod_num: %d\npod_res: %d\npod_total_res: %d " % (cur_num, cur_cpu_res, cur_cpu_res * cur_num))
+    print("pod_rps: %f\npod_total_rps: %d " % (cur_rps_for_each, cur_rps_for_each * cur_num))
+    print("svc_ws: %f\nsvc_pro: %f" % (cur_ws, cur_pro))
+    print("res_cost: %f\nsla_cost: %f" % (opt_res_cost, opt_sla_cost))
+    print("*" * 40)
+
+    f = open('hybrid_result.txt', 'a')
+    f.write(time.strftime("\n%Y-%m-%d %H:%M:%S\n", time.localtime()))
+    f.write("current index: %d \n" % loadcount)
+    f.write("load: %d\n" % load)
+    f.write("pod_num: %d\npod_res: %d\npod_total_res: %d\n" % (cur_num, cur_cpu_res, cur_cpu_res * cur_num))
+    f.write("pod_rps: %f\npod_total_rps: %d\n" % (cur_rps_for_each, cur_rps_for_each * cur_num))
+    f.write("svc_ws: %f\nsvc_pro: %f\n" % (cur_ws, cur_pro))
+    f.write("res_cost: %f\nsla_cost: %f\n" % (opt_res_cost, opt_sla_cost))
+    f.write("*" * 30)
+    f.close()
+
+
+def outputlog(loadcount, load, opt_score, old_score, opt_rps, cur_rps_for_each,
+              opt_num, cur_num, opt_cpu_res, cur_cpu_res, opt_ws, cur_ws, opt_pro, cur_pro):
+    # print("当前的load: %d" % load)
+    # print("推荐方案的得分：%f vs 旧方案的得分：%f" % (opt_score, old_score))
+    # print("推荐方案的的rps: %f vs 旧方案的rps：%f" % (opt_rps, cur_rps_for_each))
+    # print("推荐方案的的num: %d vs 旧方案的num：%d" % (opt_num, cur_num))
+    # print("推荐方案的CPU资源量: %d vs 旧方案的CPU资源量：%d" % (opt_num * opt_cpu_res, cur_num * cur_cpu_res))
+    # print("推荐方案的的res: %d vs 旧方案的res: %d" % (opt_cpu_res, cur_cpu_res))
+    # print("推荐方案的的ws: %f vs 旧方案的ws：%f" % (opt_ws, cur_ws))
+    # print("推荐方案的的概率: %f vs 旧方案的的概率: %f" % (opt_pro, cur_pro))
+
+    f = open('hybrid_log.txt', 'a')
+    f.write(time.strftime("\n%Y-%m-%d %H:%M:%S\n", time.localtime()))
+    f.write("当前索引: %d\n" % loadcount)
+    f.write("当前的load: %d\n" % load)
+    f.write("推荐方案的得分：%f vs 旧方案的得分：%f\n" % (opt_score, old_score))
+    f.write("推荐方案的的rps: %f vs 旧方案的rps：%f\n" % (opt_rps, cur_rps_for_each))
+    f.write("推荐方案的的num: %d vs 旧方案的num：%d\n" % (opt_num, cur_num))
+    f.write("推荐方案的CPU资源量: %d vs 旧方案的CPU资源量：%d\n" % (opt_num * opt_cpu_res, cur_num * cur_cpu_res))
+    f.write("推荐方案的的res: %d vs 旧方案的res: %d\n" % (opt_cpu_res, cur_cpu_res))
+    f.write("推荐方案的的ws: %f vs 旧方案的ws：%f\n" % (opt_ws, cur_ws))
+    f.write("推荐方案的的概率: %f vs 旧方案的的概率: %f\n" % (opt_pro, cur_pro))
+    f.write("*" * 50)
+
+    f.close()
 
 
 def get_sla_cost(arg, pro):
@@ -163,11 +189,11 @@ def getOptimalPlan(load, rps_txt, limit_txt, arg, old_n, old_cpu, old_mem, cur_s
 
         new_res_cost = 0
         # 计算资源成本,分水平伸缩和组合式伸缩
-        if new_pod_cpu == old_cpu:
+        if new_pod_cpu == old_cpu and new_num < 30:
             # CPU的资源成本
             new_res_cost = math.ceil(new_total_cpu_res / 1000) * p_cpu * interval
             # Mem的资源成本
-        else:
+        elif new_pod_cpu != old_cpu and new_num < 30:
 
             # 旧实例的初始个数
             old_initial_n = math.ceil(new_num * (1 - mu))
@@ -182,6 +208,8 @@ def getOptimalPlan(load, rps_txt, limit_txt, arg, old_n, old_cpu, old_mem, cur_s
                 new_res_cost += math.ceil((new_num * new_pod_cpu + j * old_cpu) / 1000) * t1 * p_cpu
                 j = j + 1
             new_res_cost += (interval - (old_initial_n * t1)) * math.ceil(new_total_cpu_res / 1000) * p_cpu
+        else:
+            new_res_cost = 10000
 
         # 计算违约成本
         new_sla_cost = get_sla_cost(arg, new_proportion)
@@ -229,7 +257,8 @@ def getOptimalPlan(load, rps_txt, limit_txt, arg, old_n, old_cpu, old_mem, cur_s
     cur_normal_sla_cost = (sla_cost_max - cur_sla_cost) / (sla_cost_max - sla_cost_min)
     # 下标为optimalIndex的，即最优的方案
     return pod_cpu_list[optimalIndex], pod_num_list[optimalIndex] \
-        , ws_list[optimalIndex], proportion_list[optimalIndex], rps_list[optimalIndex], optimalScore, cur_normal_res_cost, cur_normal_sla_cost
+        , ws_list[optimalIndex], proportion_list[optimalIndex], rps_list[optimalIndex], optimalScore, res_cost_list[
+               optimalIndex], sla_cost_list[optimalIndex], cur_normal_res_cost, cur_normal_sla_cost
 
 
 def execute(num_pod, limit_pod, arg):
@@ -288,6 +317,8 @@ def queue(load, rps, rtt, redundancy):
             c = c + 1
             strength = 1.0 * load / (c * rps)
             continue
+        if c > 30:
+            return 10000, -1, 0
         p0 = 0
         k = 0
         while k <= c - 1:
@@ -352,6 +383,12 @@ def main():
     load_txt, rps_txt, limit_txt = prepare()
 
     decide(load_txt, rps_txt, limit_txt, arg)
+    f = open('hybrid_log.txt', 'a')
+    f.write("\nend of the test\n\n\n\n\n")
+    f.close()
+    f = open('hybrid_result.txt', 'a')
+    f.write("\nend of the test\n\n\n\n\n")
+    f.close()
 
 
 if __name__ == '__main__':

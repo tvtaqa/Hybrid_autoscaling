@@ -1,13 +1,16 @@
-'p_cpu': 0.00003334
-'p_mem': 0.00001389
-'ms': 0.25
-'mu': 0.25
-'rtt': 0.3
-'per_pod_start_time': 1
-'interval': 300
-'namespace': 'test'
-'deployment': 'php-apache'
-'sla_level_one_pro': 95
+'p_cpu': 0.00003334   #cpu每秒单价
+'p_mem': 0.00001389   #mem每秒单价
+'ms': 0.25            #滚动式更新 MaxSurge参数
+'mu': 0.25            #滚动式更新 MaxUnavailable参数
+'rtt': 0.1            #用户规定的响应时间
+'interval': 300       #每隔300s获取当前负载，做伸缩的决策
+'redundancy': 1.05    #冗余量，比如当前负载是100，计算推荐方案时，使用105计算
+
+# SLA协议的规则：
+# 95%以上的请求 < rtt，则违约费用为0
+# 90%以上的请求 < rtt，则违约费用为0.2倍的服务费用
+# 下同
+'sla_level_one_pro': 99
 'sla_level_one_punishment': 0
 'sla_level_two_pro': 90
 'sla_level_two_punishment': 0.2
@@ -15,8 +18,13 @@
 'sla_level_three_punishment': 0.5
 'sla_level_four_pro': 0
 'sla_level_four_punishment': 1
-'thresold': 0.1
-'redundancy': 1.1   #冗余量，比如当前负载是100， 计算推荐方案时，使用110计算
+
+
+'namespace': 'hy'
+'deployment': 'php-apache-hy'
+'per_pod_start_time': 1
+'thresold': 0.1  #推荐方案和当前方案 决策
+
 #'p_service': 0.3
 #'start_time_constraint': 0.1
 
