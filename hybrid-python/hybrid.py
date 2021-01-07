@@ -5,7 +5,6 @@ from kubernetes import client, config
 from sympy import *
 import yaml
 
-
 _YAML_FILE_NAME = 'arg.yaml'
 
 '''
@@ -22,12 +21,8 @@ _YAML_FILE_NAME = 'arg.yaml'
 PS：
 '''
 
-'''
-To do
-当前的枚举版本是错误的，应当枚举一种资源量下不同实例个数，所以得到方案应该是M*N。（M是不同的资源配置个数，N是pod的个数上限）
-'''
-def decide(load_txt, rps_txt, limit_txt, arg):
 
+def decide(load_txt, rps_txt, limit_txt, arg):
     user_rtt = arg['rtt']
     cur_cpu_res, cur_mem_res, cur_num, cur_ws, cur_pro, cur_rps_for_each, cur_sla_cost, cur_res_cost = 1950, 0, 1, 0, 0, 70.1, 0, 0
     loadcount = 0
@@ -64,6 +59,7 @@ def decide(load_txt, rps_txt, limit_txt, arg):
             ischange = true
             # 执行伸缩方案
             # execute(cur_num, cur_cpu_res, arg)
+
 
         outputre(ischange, load, loadcount, cur_num, cur_cpu_res, cur_rps_for_each, cur_ws, cur_pro, cur_res_cost,
                  cur_sla_cost)
@@ -194,11 +190,11 @@ def getOptimalPlan(load, rps_txt, limit_txt, arg, old_n, old_cpu, old_mem, cur_s
 
         new_res_cost = 0
         # 计算资源成本,分水平伸缩和组合式伸缩
-        if new_pod_cpu == old_cpu and new_num < 30:
+        if new_pod_cpu == old_cpu:
             # CPU的资源成本
             new_res_cost = math.ceil(new_total_cpu_res / 1000) * p_cpu * interval
             # Mem的资源成本
-        elif new_pod_cpu != old_cpu and new_num < 30:
+        else:
 
             # 旧实例的初始个数
             old_initial_n = math.ceil(new_num * (1 - mu))
@@ -213,8 +209,6 @@ def getOptimalPlan(load, rps_txt, limit_txt, arg, old_n, old_cpu, old_mem, cur_s
                 new_res_cost += math.ceil((new_num * new_pod_cpu + j * old_cpu) / 1000) * t1 * p_cpu
                 j = j + 1
             new_res_cost += (interval - (old_initial_n * t1)) * math.ceil(new_total_cpu_res / 1000) * p_cpu
-        else:
-            new_res_cost = 10000
 
         # 计算违约成本
         new_sla_cost = get_sla_cost(arg, new_proportion)
@@ -322,8 +316,6 @@ def queue(load, rps, rtt, redundancy):
             c = c + 1
             strength = 1.0 * load / (c * rps)
             continue
-        if c > 30:
-            return 10000, -1, 0
         p0 = 0
         k = 0
         while k <= c - 1:
