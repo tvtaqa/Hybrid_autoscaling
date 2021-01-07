@@ -3791,3 +3791,2523 @@ end of the test
 
 
 
+
+2021-01-07 19:52:47
+current index: 0 
+load: 58
+pod_num: 3
+pod_res: 200
+pod_total_res: 600
+pod_rps: 7.098260
+pod_total_rps: 21
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.010002
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:47
+current index: 1 
+load: 63
+pod_num: 3
+pod_res: 225
+pod_total_res: 675
+pod_rps: 7.933270
+pod_total_rps: 23
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:47
+current index: 2 
+load: 74
+pod_num: 3
+pod_res: 200
+pod_total_res: 600
+pod_rps: 7.098260
+pod_total_rps: 21
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:47
+current index: 3 
+load: 78
+pod_num: 3
+pod_res: 225
+pod_total_res: 675
+pod_rps: 7.933270
+pod_total_rps: 23
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:47
+current index: 4 
+load: 69
+pod_num: 3
+pod_res: 200
+pod_total_res: 600
+pod_rps: 7.098260
+pod_total_rps: 21
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:47
+current index: 5 
+load: 71
+pod_num: 3
+pod_res: 225
+pod_total_res: 675
+pod_rps: 7.933270
+pod_total_rps: 23
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:47
+current index: 6 
+load: 65
+pod_num: 3
+pod_res: 200
+pod_total_res: 600
+pod_rps: 7.098260
+pod_total_rps: 21
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:47
+current index: 7 
+load: 70
+pod_num: 3
+pod_res: 225
+pod_total_res: 675
+pod_rps: 7.933270
+pod_total_rps: 23
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:47
+current index: 8 
+load: 73
+pod_num: 3
+pod_res: 200
+pod_total_res: 600
+pod_rps: 7.098260
+pod_total_rps: 21
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:47
+current index: 9 
+load: 74
+pod_num: 3
+pod_res: 225
+pod_total_res: 675
+pod_rps: 7.933270
+pod_total_rps: 23
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:47
+current index: 10 
+load: 74
+pod_num: 3
+pod_res: 200
+pod_total_res: 600
+pod_rps: 7.098260
+pod_total_rps: 21
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:47
+current index: 11 
+load: 76
+pod_num: 3
+pod_res: 225
+pod_total_res: 675
+pod_rps: 7.933270
+pod_total_rps: 23
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:47
+current index: 12 
+load: 73
+pod_num: 3
+pod_res: 200
+pod_total_res: 600
+pod_rps: 7.098260
+pod_total_rps: 21
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:47
+current index: 13 
+load: 69
+pod_num: 3
+pod_res: 225
+pod_total_res: 675
+pod_rps: 7.933270
+pod_total_rps: 23
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:47
+current index: 14 
+load: 70
+pod_num: 3
+pod_res: 200
+pod_total_res: 600
+pod_rps: 7.098260
+pod_total_rps: 21
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:47
+current index: 15 
+load: 68
+pod_num: 3
+pod_res: 225
+pod_total_res: 675
+pod_rps: 7.933270
+pod_total_rps: 23
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:48
+current index: 16 
+load: 74
+pod_num: 3
+pod_res: 200
+pod_total_res: 600
+pod_rps: 7.098260
+pod_total_rps: 21
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:48
+current index: 17 
+load: 73
+pod_num: 3
+pod_res: 225
+pod_total_res: 675
+pod_rps: 7.933270
+pod_total_rps: 23
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:48
+current index: 18 
+load: 72
+pod_num: 3
+pod_res: 200
+pod_total_res: 600
+pod_rps: 7.098260
+pod_total_rps: 21
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:48
+current index: 19 
+load: 71
+pod_num: 3
+pod_res: 225
+pod_total_res: 675
+pod_rps: 7.933270
+pod_total_rps: 23
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:48
+current index: 20 
+load: 70
+pod_num: 3
+pod_res: 200
+pod_total_res: 600
+pod_rps: 7.098260
+pod_total_rps: 21
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:48
+current index: 21 
+load: 70
+pod_num: 3
+pod_res: 225
+pod_total_res: 675
+pod_rps: 7.933270
+pod_total_rps: 23
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:48
+current index: 22 
+load: 71
+pod_num: 3
+pod_res: 200
+pod_total_res: 600
+pod_rps: 7.098260
+pod_total_rps: 21
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:48
+current index: 23 
+load: 69
+pod_num: 3
+pod_res: 225
+pod_total_res: 675
+pod_rps: 7.933270
+pod_total_rps: 23
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:48
+current index: 24 
+load: 73
+pod_num: 3
+pod_res: 200
+pod_total_res: 600
+pod_rps: 7.098260
+pod_total_rps: 21
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:48
+current index: 25 
+load: 75
+pod_num: 3
+pod_res: 225
+pod_total_res: 675
+pod_rps: 7.933270
+pod_total_rps: 23
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:48
+current index: 26 
+load: 80
+pod_num: 3
+pod_res: 200
+pod_total_res: 600
+pod_rps: 7.098260
+pod_total_rps: 21
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:48
+current index: 27 
+load: 77
+pod_num: 3
+pod_res: 225
+pod_total_res: 675
+pod_rps: 7.933270
+pod_total_rps: 23
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:48
+current index: 28 
+load: 74
+pod_num: 3
+pod_res: 200
+pod_total_res: 600
+pod_rps: 7.098260
+pod_total_rps: 21
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:48
+current index: 29 
+load: 73
+pod_num: 3
+pod_res: 225
+pod_total_res: 675
+pod_rps: 7.933270
+pod_total_rps: 23
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:48
+current index: 30 
+load: 74
+pod_num: 3
+pod_res: 200
+pod_total_res: 600
+pod_rps: 7.098260
+pod_total_rps: 21
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:48
+current index: 31 
+load: 76
+pod_num: 3
+pod_res: 225
+pod_total_res: 675
+pod_rps: 7.933270
+pod_total_rps: 23
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:48
+current index: 32 
+load: 70
+pod_num: 3
+pod_res: 200
+pod_total_res: 600
+pod_rps: 7.098260
+pod_total_rps: 21
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:48
+current index: 33 
+load: 71
+pod_num: 3
+pod_res: 225
+pod_total_res: 675
+pod_rps: 7.933270
+pod_total_rps: 23
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:49
+current index: 34 
+load: 64
+pod_num: 3
+pod_res: 200
+pod_total_res: 600
+pod_rps: 7.098260
+pod_total_rps: 21
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:49
+current index: 35 
+load: 70
+pod_num: 3
+pod_res: 225
+pod_total_res: 675
+pod_rps: 7.933270
+pod_total_rps: 23
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:49
+current index: 36 
+load: 73
+pod_num: 3
+pod_res: 200
+pod_total_res: 600
+pod_rps: 7.098260
+pod_total_rps: 21
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:49
+current index: 37 
+load: 74
+pod_num: 3
+pod_res: 225
+pod_total_res: 675
+pod_rps: 7.933270
+pod_total_rps: 23
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:49
+current index: 38 
+load: 78
+pod_num: 3
+pod_res: 200
+pod_total_res: 600
+pod_rps: 7.098260
+pod_total_rps: 21
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:49
+current index: 39 
+load: 59
+pod_num: 3
+pod_res: 225
+pod_total_res: 675
+pod_rps: 7.933270
+pod_total_rps: 23
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:49
+current index: 40 
+load: 64
+pod_num: 3
+pod_res: 200
+pod_total_res: 600
+pod_rps: 7.098260
+pod_total_rps: 21
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:49
+current index: 41 
+load: 65
+pod_num: 3
+pod_res: 225
+pod_total_res: 675
+pod_rps: 7.933270
+pod_total_rps: 23
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:49
+current index: 42 
+load: 70
+pod_num: 3
+pod_res: 200
+pod_total_res: 600
+pod_rps: 7.098260
+pod_total_rps: 21
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:49
+current index: 43 
+load: 73
+pod_num: 3
+pod_res: 225
+pod_total_res: 675
+pod_rps: 7.933270
+pod_total_rps: 23
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:49
+current index: 44 
+load: 74
+pod_num: 3
+pod_res: 200
+pod_total_res: 600
+pod_rps: 7.098260
+pod_total_rps: 21
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:49
+current index: 45 
+load: 83
+pod_num: 3
+pod_res: 225
+pod_total_res: 675
+pod_rps: 7.933270
+pod_total_rps: 23
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:49
+current index: 46 
+load: 69
+pod_num: 3
+pod_res: 200
+pod_total_res: 600
+pod_rps: 7.098260
+pod_total_rps: 21
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+2021-01-07 19:52:49
+current index: 47 
+load: 71
+pod_num: 3
+pod_res: 225
+pod_total_res: 675
+pod_rps: 7.933270
+pod_total_rps: 23
+svc_ws: -1.000000
+svc_pro: 0.000000
+res_cost: 0.009935
+sla_cost: 0.000000
+******************************
+end of the test
+
+
+
+
+
+2021-01-07 19:55:36
+current index: 0 
+load: 58
+pod_num: 16
+pod_res: 250
+pod_total_res: 4000
+pod_rps: 8.880710
+pod_total_rps: 142
+svc_ws: 0.112630
+svc_pro: 99.414793
+res_cost: 0.039608
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:36
+current index: 1 
+load: 63
+pod_num: 16
+pod_res: 250
+pod_total_res: 4000
+pod_rps: 8.880710
+pod_total_rps: 142
+svc_ws: 0.112641
+svc_pro: 99.205593
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:36
+current index: 2 
+load: 74
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.071230
+svc_pro: 99.112854
+res_cost: 0.039441
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:36
+current index: 3 
+load: 78
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.071256
+svc_pro: 99.085167
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:36
+current index: 4 
+load: 69
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070706
+svc_pro: 99.658676
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:36
+current index: 5 
+load: 71
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070797
+svc_pro: 99.569841
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:36
+current index: 6 
+load: 65
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070565
+svc_pro: 99.790194
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:36
+current index: 7 
+load: 70
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070749
+svc_pro: 99.616461
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:36
+current index: 8 
+load: 73
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070903
+svc_pro: 99.461853
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:36
+current index: 9 
+load: 74
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070963
+svc_pro: 99.399655
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:36
+current index: 10 
+load: 74
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070963
+svc_pro: 99.399655
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:36
+current index: 11 
+load: 76
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.071098
+svc_pro: 99.256568
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:36
+current index: 12 
+load: 73
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070903
+svc_pro: 99.461853
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:36
+current index: 13 
+load: 69
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070706
+svc_pro: 99.658676
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:36
+current index: 14 
+load: 70
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070749
+svc_pro: 99.616461
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:36
+current index: 15 
+load: 68
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070666
+svc_pro: 99.696838
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:36
+current index: 16 
+load: 74
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070963
+svc_pro: 99.399655
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:36
+current index: 17 
+load: 73
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070903
+svc_pro: 99.461853
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:36
+current index: 18 
+load: 72
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070848
+svc_pro: 99.518439
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:36
+current index: 19 
+load: 71
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070797
+svc_pro: 99.569841
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:36
+current index: 20 
+load: 70
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070749
+svc_pro: 99.616461
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:36
+current index: 21 
+load: 70
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070749
+svc_pro: 99.616461
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:37
+current index: 22 
+load: 71
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070797
+svc_pro: 99.569841
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:37
+current index: 23 
+load: 69
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070706
+svc_pro: 99.658676
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:37
+current index: 24 
+load: 73
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070903
+svc_pro: 99.461853
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:37
+current index: 25 
+load: 75
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.071028
+svc_pro: 99.331389
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:37
+current index: 26 
+load: 80
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.047201
+svc_pro: 99.043818
+res_cost: 0.039675
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:37
+current index: 27 
+load: 77
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.045851
+svc_pro: 99.531891
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:37
+current index: 28 
+load: 74
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.045414
+svc_pro: 99.659803
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:37
+current index: 29 
+load: 73
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.045283
+svc_pro: 99.694730
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:37
+current index: 30 
+load: 74
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.045414
+svc_pro: 99.659803
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:37
+current index: 31 
+load: 76
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.045697
+svc_pro: 99.578740
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:37
+current index: 32 
+load: 70
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.044933
+svc_pro: 99.780802
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:37
+current index: 33 
+load: 71
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.045043
+svc_pro: 99.754952
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:37
+current index: 34 
+load: 64
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.044391
+svc_pro: 99.890455
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:37
+current index: 35 
+load: 70
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.044933
+svc_pro: 99.780802
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:37
+current index: 36 
+load: 73
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.045283
+svc_pro: 99.694730
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:37
+current index: 37 
+load: 74
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.045414
+svc_pro: 99.659803
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:37
+current index: 38 
+load: 78
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.046014
+svc_pro: 99.480300
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:37
+current index: 39 
+load: 59
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.044068
+svc_pro: 99.940783
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:37
+current index: 40 
+load: 64
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.044391
+svc_pro: 99.890455
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:37
+current index: 41 
+load: 65
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.044469
+svc_pro: 99.876643
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:37
+current index: 42 
+load: 70
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.044933
+svc_pro: 99.780802
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:37
+current index: 43 
+load: 73
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.045283
+svc_pro: 99.694730
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:37
+current index: 44 
+load: 74
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.045414
+svc_pro: 99.659803
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:37
+current index: 45 
+load: 83
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.046975
+svc_pro: 99.134496
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:37
+current index: 46 
+load: 69
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.044829
+svc_pro: 99.804144
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 19:55:37
+current index: 47 
+load: 71
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.045043
+svc_pro: 99.754952
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+end of the test
+
+
+
+
+
+2021-01-07 19:56:43
+current index: 0 
+load: 58
+pod_num: 12
+pod_res: 200
+pod_total_res: 2400
+pod_rps: 7.098260
+pod_total_rps: 85
+svc_ws: 0.149380
+svc_pro: 99.566611
+res_cost: 0.029806
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:44
+current index: 1 
+load: 63
+pod_num: 12
+pod_res: 200
+pod_total_res: 2400
+pod_rps: 7.098260
+pod_total_rps: 85
+svc_ws: 0.152031
+svc_pro: 99.274608
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:44
+current index: 2 
+load: 74
+pod_num: 11
+pod_res: 250
+pod_total_res: 2750
+pod_rps: 8.880710
+pod_total_rps: 97
+svc_ws: 0.131507
+svc_pro: 99.107524
+res_cost: 0.029473
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:44
+current index: 3 
+load: 78
+pod_num: 11
+pod_res: 250
+pod_total_res: 2750
+pod_rps: 8.880710
+pod_total_rps: 97
+svc_ws: 0.132143
+svc_pro: 99.038798
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:44
+current index: 4 
+load: 69
+pod_num: 11
+pod_res: 250
+pod_total_res: 2750
+pod_rps: 8.880710
+pod_total_rps: 97
+svc_ws: 0.119967
+svc_pro: 99.902278
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:44
+current index: 5 
+load: 71
+pod_num: 11
+pod_res: 250
+pod_total_res: 2750
+pod_rps: 8.880710
+pod_total_rps: 97
+svc_ws: 0.121753
+svc_pro: 99.835677
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:44
+current index: 6 
+load: 65
+pod_num: 11
+pod_res: 250
+pod_total_res: 2750
+pod_rps: 8.880710
+pod_total_rps: 97
+svc_ws: 0.117328
+svc_pro: 99.966238
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:44
+current index: 7 
+load: 70
+pod_num: 11
+pod_res: 250
+pod_total_res: 2750
+pod_rps: 8.880710
+pod_total_rps: 97
+svc_ws: 0.120813
+svc_pro: 99.873164
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:44
+current index: 8 
+load: 73
+pod_num: 11
+pod_res: 250
+pod_total_res: 2750
+pod_rps: 8.880710
+pod_total_rps: 97
+svc_ws: 0.123956
+svc_pro: 99.725633
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:44
+current index: 9 
+load: 74
+pod_num: 11
+pod_res: 250
+pod_total_res: 2750
+pod_rps: 8.880710
+pod_total_rps: 97
+svc_ws: 0.125247
+svc_pro: 99.646358
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:44
+current index: 10 
+load: 74
+pod_num: 11
+pod_res: 250
+pod_total_res: 2750
+pod_rps: 8.880710
+pod_total_rps: 97
+svc_ws: 0.125247
+svc_pro: 99.646358
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:44
+current index: 11 
+load: 76
+pod_num: 11
+pod_res: 250
+pod_total_res: 2750
+pod_rps: 8.880710
+pod_total_rps: 97
+svc_ws: 0.128301
+svc_pro: 99.415239
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:44
+current index: 12 
+load: 73
+pod_num: 11
+pod_res: 250
+pod_total_res: 2750
+pod_rps: 8.880710
+pod_total_rps: 97
+svc_ws: 0.123956
+svc_pro: 99.725633
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:44
+current index: 13 
+load: 69
+pod_num: 11
+pod_res: 250
+pod_total_res: 2750
+pod_rps: 8.880710
+pod_total_rps: 97
+svc_ws: 0.119967
+svc_pro: 99.902278
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:44
+current index: 14 
+load: 70
+pod_num: 11
+pod_res: 250
+pod_total_res: 2750
+pod_rps: 8.880710
+pod_total_rps: 97
+svc_ws: 0.120813
+svc_pro: 99.873164
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:44
+current index: 15 
+load: 68
+pod_num: 11
+pod_res: 250
+pod_total_res: 2750
+pod_rps: 8.880710
+pod_total_rps: 97
+svc_ws: 0.119203
+svc_pro: 99.924852
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:44
+current index: 16 
+load: 74
+pod_num: 11
+pod_res: 250
+pod_total_res: 2750
+pod_rps: 8.880710
+pod_total_rps: 97
+svc_ws: 0.125247
+svc_pro: 99.646358
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:44
+current index: 17 
+load: 73
+pod_num: 11
+pod_res: 250
+pod_total_res: 2750
+pod_rps: 8.880710
+pod_total_rps: 97
+svc_ws: 0.123956
+svc_pro: 99.725633
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:44
+current index: 18 
+load: 72
+pod_num: 11
+pod_res: 250
+pod_total_res: 2750
+pod_rps: 8.880710
+pod_total_rps: 97
+svc_ws: 0.122796
+svc_pro: 99.787487
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:44
+current index: 19 
+load: 71
+pod_num: 11
+pod_res: 250
+pod_total_res: 2750
+pod_rps: 8.880710
+pod_total_rps: 97
+svc_ws: 0.121753
+svc_pro: 99.835677
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:44
+current index: 20 
+load: 70
+pod_num: 11
+pod_res: 250
+pod_total_res: 2750
+pod_rps: 8.880710
+pod_total_rps: 97
+svc_ws: 0.120813
+svc_pro: 99.873164
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:44
+current index: 21 
+load: 70
+pod_num: 11
+pod_res: 250
+pod_total_res: 2750
+pod_rps: 8.880710
+pod_total_rps: 97
+svc_ws: 0.120813
+svc_pro: 99.873164
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:44
+current index: 22 
+load: 71
+pod_num: 11
+pod_res: 250
+pod_total_res: 2750
+pod_rps: 8.880710
+pod_total_rps: 97
+svc_ws: 0.121753
+svc_pro: 99.835677
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:44
+current index: 23 
+load: 69
+pod_num: 11
+pod_res: 250
+pod_total_res: 2750
+pod_rps: 8.880710
+pod_total_rps: 97
+svc_ws: 0.119967
+svc_pro: 99.902278
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:44
+current index: 24 
+load: 73
+pod_num: 11
+pod_res: 250
+pod_total_res: 2750
+pod_rps: 8.880710
+pod_total_rps: 97
+svc_ws: 0.123956
+svc_pro: 99.725633
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:45
+current index: 25 
+load: 75
+pod_num: 11
+pod_res: 250
+pod_total_res: 2750
+pod_rps: 8.880710
+pod_total_rps: 97
+svc_ws: 0.126689
+svc_pro: 99.544902
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:45
+current index: 26 
+load: 80
+pod_num: 15
+pod_res: 200
+pod_total_res: 3000
+pod_rps: 7.098260
+pod_total_rps: 106
+svc_ws: 0.153986
+svc_pro: 99.175672
+res_cost: 0.029339
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:45
+current index: 27 
+load: 77
+pod_num: 15
+pod_res: 200
+pod_total_res: 3000
+pod_rps: 7.098260
+pod_total_rps: 106
+svc_ws: 0.146780
+svc_pro: 99.840212
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:45
+current index: 28 
+load: 74
+pod_num: 15
+pod_res: 200
+pod_total_res: 3000
+pod_rps: 7.098260
+pod_total_rps: 106
+svc_ws: 0.145028
+svc_pro: 99.923214
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:45
+current index: 29 
+load: 73
+pod_num: 15
+pod_res: 200
+pod_total_res: 3000
+pod_rps: 7.098260
+pod_total_rps: 106
+svc_ws: 0.144559
+svc_pro: 99.940124
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:45
+current index: 30 
+load: 74
+pod_num: 15
+pod_res: 200
+pod_total_res: 3000
+pod_rps: 7.098260
+pod_total_rps: 106
+svc_ws: 0.145028
+svc_pro: 99.923214
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:45
+current index: 31 
+load: 76
+pod_num: 15
+pod_res: 200
+pod_total_res: 3000
+pod_rps: 7.098260
+pod_total_rps: 106
+svc_ws: 0.146132
+svc_pro: 99.874572
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:45
+current index: 32 
+load: 70
+pod_num: 15
+pod_res: 200
+pod_total_res: 3000
+pod_rps: 7.098260
+pod_total_rps: 106
+svc_ws: 0.143423
+svc_pro: 99.972020
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:45
+current index: 33 
+load: 71
+pod_num: 15
+pod_res: 200
+pod_total_res: 3000
+pod_rps: 7.098260
+pod_total_rps: 106
+svc_ws: 0.143761
+svc_pro: 99.963853
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:45
+current index: 34 
+load: 64
+pod_num: 15
+pod_res: 200
+pod_total_res: 3000
+pod_rps: 7.098260
+pod_total_rps: 106
+svc_ws: 0.142031
+svc_pro: 99.994324
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:45
+current index: 35 
+load: 70
+pod_num: 15
+pod_res: 200
+pod_total_res: 3000
+pod_rps: 7.098260
+pod_total_rps: 106
+svc_ws: 0.143423
+svc_pro: 99.972020
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:45
+current index: 36 
+load: 73
+pod_num: 15
+pod_res: 200
+pod_total_res: 3000
+pod_rps: 7.098260
+pod_total_rps: 106
+svc_ws: 0.144559
+svc_pro: 99.940124
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:45
+current index: 37 
+load: 74
+pod_num: 15
+pod_res: 200
+pod_total_res: 3000
+pod_rps: 7.098260
+pod_total_rps: 106
+svc_ws: 0.145028
+svc_pro: 99.923214
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:45
+current index: 38 
+load: 78
+pod_num: 15
+pod_res: 200
+pod_total_res: 3000
+pod_rps: 7.098260
+pod_total_rps: 106
+svc_ws: 0.147502
+svc_pro: 99.796858
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:45
+current index: 39 
+load: 59
+pod_num: 15
+pod_res: 200
+pod_total_res: 3000
+pod_rps: 7.098260
+pod_total_rps: 106
+svc_ws: 0.141432
+svc_pro: 99.998626
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:45
+current index: 40 
+load: 64
+pod_num: 15
+pod_res: 200
+pod_total_res: 3000
+pod_rps: 7.098260
+pod_total_rps: 106
+svc_ws: 0.142031
+svc_pro: 99.994324
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:45
+current index: 41 
+load: 65
+pod_num: 15
+pod_res: 200
+pod_total_res: 3000
+pod_rps: 7.098260
+pod_total_rps: 106
+svc_ws: 0.142201
+svc_pro: 99.992540
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:45
+current index: 42 
+load: 70
+pod_num: 15
+pod_res: 200
+pod_total_res: 3000
+pod_rps: 7.098260
+pod_total_rps: 106
+svc_ws: 0.143423
+svc_pro: 99.972020
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:45
+current index: 43 
+load: 73
+pod_num: 15
+pod_res: 200
+pod_total_res: 3000
+pod_rps: 7.098260
+pod_total_rps: 106
+svc_ws: 0.144559
+svc_pro: 99.940124
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:45
+current index: 44 
+load: 74
+pod_num: 15
+pod_res: 200
+pod_total_res: 3000
+pod_rps: 7.098260
+pod_total_rps: 106
+svc_ws: 0.145028
+svc_pro: 99.923214
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:45
+current index: 45 
+load: 83
+pod_num: 15
+pod_res: 200
+pod_total_res: 3000
+pod_rps: 7.098260
+pod_total_rps: 106
+svc_ws: 0.152580
+svc_pro: 99.344407
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:45
+current index: 46 
+load: 69
+pod_num: 15
+pod_res: 200
+pod_total_res: 3000
+pod_rps: 7.098260
+pod_total_rps: 106
+svc_ws: 0.143120
+svc_pro: 99.978398
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+2021-01-07 19:56:45
+current index: 47 
+load: 71
+pod_num: 15
+pod_res: 200
+pod_total_res: 3000
+pod_rps: 7.098260
+pod_total_rps: 106
+svc_ws: 0.143761
+svc_pro: 99.963853
+res_cost: 0.030006
+sla_cost: 0.000000
+******************************
+end of the test
+
+
+
+
+
+2021-01-07 20:00:02
+current index: 0 
+load: 58
+pod_num: 16
+pod_res: 250
+pod_total_res: 4000
+pod_rps: 8.880710
+pod_total_rps: 142
+svc_ws: 0.112630
+svc_pro: 99.414793
+res_cost: 0.039608
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:02
+current index: 1 
+load: 63
+pod_num: 16
+pod_res: 250
+pod_total_res: 4000
+pod_rps: 8.880710
+pod_total_rps: 142
+svc_ws: 0.112641
+svc_pro: 99.205593
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:02
+current index: 2 
+load: 74
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.071230
+svc_pro: 99.112854
+res_cost: 0.039441
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:02
+current index: 3 
+load: 78
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.071256
+svc_pro: 99.085167
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:02
+current index: 4 
+load: 69
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070706
+svc_pro: 99.658676
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:02
+current index: 5 
+load: 71
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070797
+svc_pro: 99.569841
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:02
+current index: 6 
+load: 65
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070565
+svc_pro: 99.790194
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:02
+current index: 7 
+load: 70
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070749
+svc_pro: 99.616461
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:02
+current index: 8 
+load: 73
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070903
+svc_pro: 99.461853
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:02
+current index: 9 
+load: 74
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070963
+svc_pro: 99.399655
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:02
+current index: 10 
+load: 74
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070963
+svc_pro: 99.399655
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:02
+current index: 11 
+load: 76
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.071098
+svc_pro: 99.256568
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:02
+current index: 12 
+load: 73
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070903
+svc_pro: 99.461853
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:02
+current index: 13 
+load: 69
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070706
+svc_pro: 99.658676
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:02
+current index: 14 
+load: 70
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070749
+svc_pro: 99.616461
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:02
+current index: 15 
+load: 68
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070666
+svc_pro: 99.696838
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:02
+current index: 16 
+load: 74
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070963
+svc_pro: 99.399655
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:02
+current index: 17 
+load: 73
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070903
+svc_pro: 99.461853
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:02
+current index: 18 
+load: 72
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070848
+svc_pro: 99.518439
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:02
+current index: 19 
+load: 71
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070797
+svc_pro: 99.569841
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:02
+current index: 20 
+load: 70
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070749
+svc_pro: 99.616461
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:02
+current index: 21 
+load: 70
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070749
+svc_pro: 99.616461
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:02
+current index: 22 
+load: 71
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070797
+svc_pro: 99.569841
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:02
+current index: 23 
+load: 69
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070706
+svc_pro: 99.658676
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:03
+current index: 24 
+load: 73
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.070903
+svc_pro: 99.461853
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:03
+current index: 25 
+load: 75
+pod_num: 10
+pod_res: 400
+pod_total_res: 4000
+pod_rps: 14.225700
+pod_total_rps: 142
+svc_ws: 0.071028
+svc_pro: 99.331389
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:03
+current index: 26 
+load: 80
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.047201
+svc_pro: 99.043818
+res_cost: 0.039675
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:03
+current index: 27 
+load: 77
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.045851
+svc_pro: 99.531891
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:03
+current index: 28 
+load: 74
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.045414
+svc_pro: 99.659803
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:03
+current index: 29 
+load: 73
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.045283
+svc_pro: 99.694730
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:03
+current index: 30 
+load: 74
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.045414
+svc_pro: 99.659803
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:03
+current index: 31 
+load: 76
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.045697
+svc_pro: 99.578740
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:03
+current index: 32 
+load: 70
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.044933
+svc_pro: 99.780802
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:03
+current index: 33 
+load: 71
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.045043
+svc_pro: 99.754952
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:03
+current index: 34 
+load: 64
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.044391
+svc_pro: 99.890455
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:03
+current index: 35 
+load: 70
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.044933
+svc_pro: 99.780802
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:03
+current index: 36 
+load: 73
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.045283
+svc_pro: 99.694730
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:03
+current index: 37 
+load: 74
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.045414
+svc_pro: 99.659803
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:03
+current index: 38 
+load: 78
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.046014
+svc_pro: 99.480300
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:03
+current index: 39 
+load: 59
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.044068
+svc_pro: 99.940783
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:03
+current index: 40 
+load: 64
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.044391
+svc_pro: 99.890455
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:03
+current index: 41 
+load: 65
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.044469
+svc_pro: 99.876643
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:03
+current index: 42 
+load: 70
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.044933
+svc_pro: 99.780802
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:03
+current index: 43 
+load: 73
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.045283
+svc_pro: 99.694730
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:03
+current index: 44 
+load: 74
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.045414
+svc_pro: 99.659803
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:03
+current index: 45 
+load: 83
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.046975
+svc_pro: 99.134496
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:03
+current index: 46 
+load: 69
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.044829
+svc_pro: 99.804144
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+2021-01-07 20:00:03
+current index: 47 
+load: 71
+pod_num: 6
+pod_res: 650
+pod_total_res: 3900
+pod_rps: 23.038100
+pod_total_rps: 138
+svc_ws: 0.045043
+svc_pro: 99.754952
+res_cost: 0.040008
+sla_cost: 0.000000
+******************************
+end of the test
+
+
+
+
